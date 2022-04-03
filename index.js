@@ -26,7 +26,7 @@ try {
   //   });
 
   mongoose.connect(
-    "mongodb+srv://DB_USERDATA:123456Asd@node-data-db.9rtsp.mongodb.net/userData?retryWrites=true&w=majority"
+    "mongodb+srv://DB_USERDATA:pass123@node-data-db.9rtsp.mongodb.net/userData?retryWrites=true&w=majority"
   );
   const db = mongoose.connection;
   db.on("error", console.error.bind(console, "connection error: "));

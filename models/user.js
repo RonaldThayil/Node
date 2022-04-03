@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
-  _id: mongoose.Schema.Types.ObjectId,
   name: {
     type: String,
   },
@@ -16,5 +15,13 @@ const userSchema = new mongoose.Schema({
     type: Boolean,
   },
 });
+
+
+// userSchema.methods.speak = function speak() {
+//   const greeting = this.name
+//     ? "Meow name is " + this.name
+//     : "I don't have a name";
+//   console.log(greeting);
+// };
 
 module.exports = mongoose.model("UserDemoChecking", userSchema);

@@ -12,5 +12,5 @@ exports.response_message = ({
     result: result,
     error: error,
   };
-  return res.status(statusCode).send(obj);
+  return res.send(obj);
 };
